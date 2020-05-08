@@ -145,6 +145,7 @@ v2ray_config() {
 v2ray_port_config() {
 	case $v2ray_transport in
 	4 | 5)
+	        path_config_ask
 		tls_config
 		;;
 	*)
